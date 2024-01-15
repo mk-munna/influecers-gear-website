@@ -70,7 +70,40 @@ nav a{
 }
 .header-content{
     margin-top: 74px;
-    width: 37rem;
     padding: 0px;
 }
+.header img{
+    width: 100%;
+}
 /* ------------------------------header Done----------------- */
+
+
+
+
+
+/* --------------------------------Responsive Media Query */
+/* smaller Devices */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    ul {
+        gap: 1rem ;
+    }
+    .header{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .header-content{
+        padding: 0 20px;
+    }
+    .header-title {
+        font-size: 28px;
+    }
+    .primary-desc{
+        margin-top: 20;
+        
+
+    }
+}
