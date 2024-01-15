@@ -75,15 +75,23 @@ nav a{
 .header img{
     width: 100%;
 }
-/* ------------------------------header Done----------------- */
-
-
+/* ---header Done---- */
+/* --------------------------style for Partner section----------- */
+.partner{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
 
 
 
 /* --------------------------------Responsive Media Query */
 /* smaller Devices */
 @media screen and (max-width:576px) {
+    * {
+        border: 1px solid red;
+    }
     nav {
         flex-direction: column;
         gap: 20px;
@@ -103,7 +111,15 @@ nav a{
     }
     .primary-desc{
         margin-top: 20;
-        
-
+    }
+    /* partner section */
+    .partner{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+    }
+    .partner img{
+        width: 30%;
     }
 }
