@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     max-width: 80rem;
@@ -11,12 +10,14 @@
     --title-color: #3A3A3A;
     --desc-color: #6C6C6C;
 }
-.primary-title{
+
+.primary-title {
     font-size: 2.2rem;
     font-family: poppins;
     color: var(--title-color);
     font-weight: 700;
 }
+
 .primary-desc {
     margin-top: 16px;
     color: var(--desc-color);
@@ -24,7 +25,8 @@
     font-size: 1rem;
     font-weight: 600;
 }
-.primary-btn{
+
+.primary-btn {
     margin-top: 16px;
     padding: 10px 25px 10px 25px;
     color: white;
@@ -35,6 +37,7 @@
     border-radius: 41px;
     cursor: pointer;
 }
+
 /* --------------------------------------------------------------primary--------------- */
 nav {
     margin-top: 50px;
@@ -42,6 +45,7 @@ nav {
     gap: 31rem;
     align-items: center;
 }
+
 .nav-title {
     font-size: 1.5rem;
     font-weight: 700;
@@ -49,77 +53,161 @@ nav {
     color: var(--title-color);
 }
 
-ul{
+ul {
     list-style-type: none;
     display: flex;
     gap: 2rem;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: var(--title-color);
 }
+
 /* nav done */
 
-.header{
+.header {
     margin-top: 80px;
     display: flex;
     gap: 8.5rem;
 }
-.header-title{
+
+.header-title {
     font-size: 3.25rem;
 }
-.header-content{
+
+.header-content {
     margin-top: 74px;
     padding: 0px;
 }
-.header img{
+
+.header img {
     width: 100%;
 }
+
 /* ---header Done---- */
 /* --------------------------style for Partner section----------- */
-.partner{
+.partner {
     margin-top: 100px;
     display: flex;
     gap: 20px;
     padding: 20px;
+    border-top: .5px solid lightgray;
+    border-bottom: .5px solid lightgray;
+}
+
+/* partner done */
+/* ------------------------------Style for image collage-------------- */
+.collage-box {
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 315px);
+    grid-template-rows: repeat(3, 430px);
+    gap: 60px;
+}
+
+.collage {
+
+    margin: 100px 0;
+}
+
+.collage-content {
+    text-align: center;
+    max-width: 60%;
+}
+
+.card {
+    width: 300px;
+    height: 420px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.item-title {
+    color: #18191F;
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 6px 0;
+
+}
+
+.item-desc {
+    color: #787885;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+    margin-top: 5px;
 }
 
 
 
-/* --------------------------------Responsive Media Query */
-/* smaller Devices */
+
+
+
+
+/* --------------------------------Responsive Media Query --------------------------------------------------*/
+/* smaller Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2*/
 @media screen and (max-width:576px) {
     * {
         border: 1px solid red;
     }
+
     nav {
         flex-direction: column;
         gap: 20px;
     }
+
     ul {
-        gap: 1rem ;
+        gap: 1rem;
+        padding-inline-start: 0px;
     }
-    .header{
+
+    .header {
         flex-direction: column-reverse;
         gap: 0;
     }
-    .header-content{
+
+    .header-content {
         padding: 0 20px;
     }
+
     .header-title {
         font-size: 28px;
     }
-    .primary-desc{
+
+    .primary-desc {
         margin-top: 20;
     }
-    /* partner section */
-    .partner{
+
+    /* partner section responsive---------------*/
+    .partner {
         display: grid;
         gap: 5px;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 20px;
     }
-    .partner img{
-        width: 30%;
+
+    .partner img {
+        width: 60%;
+    }
+    /* --------collage img section responsive */
+.collage-box{
+    display: block;
+}
+    .collage-content{
+        max-width: 100%;
     }
 }
